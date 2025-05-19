@@ -33,8 +33,11 @@ const products = [
 
 export default function ProductGrid() {
   return (
-    <div className="mt-8">
-      <h2 className="text-2xl font-semibold mb-4">Grab the best deals on Smartphones</h2>
+    <section className="mt-10 px-4 md:px-8">
+      <h2 className="text-2xl md:text-3xl font-bold text-blue-700 mb-6 text-center">
+        Grab the Best Deals on Smartphones
+      </h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((p, index) => (
           <ProductCard
@@ -47,6 +50,6 @@ export default function ProductGrid() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
